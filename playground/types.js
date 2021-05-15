@@ -48,11 +48,42 @@
 
 // Numbers
 // typeof, operators, mixing types(1+"1"), helper methods, modulo & power, infinity, -infinity, NaN
-const person = 'Pankaj'; // typeof person
-const age = 22; // typeof age
+// const person = 'Pankaj'; // typeof person
+// const age = 22; // typeof age
 
-// operators +, -, *, /, %, **
-const kids = 3;
-const candies = 20;
-const candyForEachKid = Math.floor(20 / 3);
-const candyForDaddy = candies % kids;
+// // operators +, -, *, /, %, **
+// const kids = 3;
+// const candies = 20;
+// const candyForEachKid = Math.floor(20 / 3);
+// const candyForDaddy = candies % kids;
+
+// Objects
+const person = { first: 'Sam', last: 'watts', age: 29 }; // order does not matter in object
+// accessing the object property
+const myFirstName = person.first;
+
+// null and undefined // to express nothing in javascript
+let dog;
+console.log(dog); // undefined
+console.log(person.dog); // undefined
+
+// null is implicitly set empty value but undefined is the variablle which is declared but not assigned
+const body1 = {
+  hand: 2,
+  color: 'brown',
+  head: 1,
+};
+const body2 = {
+  hand: 2,
+  color: 'black',
+  hair: null,
+};
+
+console.log(body1.hair); // undefined
+console.log(body2.hair); // null
+
+// boolean //true or false
+
+const age1 = 22;
+const isOld = age1 < 20; // true
+const age2 = 22; // compare age1 with age2 using == and ===

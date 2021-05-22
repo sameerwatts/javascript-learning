@@ -28,3 +28,15 @@
 // eatPara.insertAdjacentText('beforebegin', '🍕');
 
 // getter and setter, textContent, innerText, innerHTML, outerHTML, insertAdjacentText
+
+const picture = document.querySelector('img');
+
+picture.classList.add('firstImg');
+// picture.classList.add('circle');
+
+function updateClass() {
+  picture.classList.toggle('circle');
+}
+picture.addEventListener('click', updateClass);
+
+// console.log(picture.classList.value);

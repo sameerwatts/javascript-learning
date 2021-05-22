@@ -9,36 +9,22 @@
   </head>
   <body>
     <div class="items" id="about">
-      <p>I'm a item</p>
-      <div class="innerItem">
-        <h2>Sub Div</h2>
-        <p>I'm a item</p>
-        <p class="myPara">I'm a item</p>
-        <p>I'm a item</p>
-        <p>I'm a item</p>
-      </div>
       <img
         src="https://source.unsplash.com/random/300x300"
         alt="Random image"
       />
-      <p>i'm a item</p>
-      <p>i'm a item</p>
-      <div class="innerTestDiv1">
-        <p class="testPara">My Text1</p>
-        <p class="testPara">My Text2</p>
-        <p class="testPara">My Text3</p>
-      </div>
-      <div class="innerTestDiv2">
-        <p class="testPara">My Text4</p>
-        <p class="testPara5">My Text5</p>
+      <span>I am hidden</span>
+      <div class="outerContainer">
+        <h2>This is a test heading</h2>
+        <span>I am hidden</span>
       </div>
     </div>
-    <script>
-      const innerDiv = document.querySelector(".items");
-      const innerTestDiv2 = innerDiv.querySelector(".innerTestDiv2");
-      const testPara5 = innerTestDiv2.querySelectorAll(".testPara5");
-      console.log(testPara5);
-    </script>
+    <p>If you are hungry eat</p>
+    <style>
+      span {
+        display: none;
+      }
+    </style>
     <script src="./the-dom.js"></script>
   </body>
 </html>

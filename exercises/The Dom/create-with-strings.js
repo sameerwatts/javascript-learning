@@ -1,8 +1,7 @@
 const outerDiv = document.querySelector('.outerContainer');
 const width = 200;
 const height = 300;
-const alt =
-  'This is a paragraph <style> p {color: red} * {display: none;}</style>';
+const alt = 'This is a paragraph';
 const src = `https://source.unsplash.com/random/${width}x${height}`;
 const myHTML = `
 <div class="xyz">
@@ -11,4 +10,4 @@ const myHTML = `
 </div>
 `;
 
-outerDiv.innerHTML = myHTML;
+// outerDiv.innerHTML = myHTML;

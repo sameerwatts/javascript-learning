@@ -26,3 +26,5 @@ outerDiv.appendChild(paragraph1);
 //  <li>four</li>
 //  <li>five</li>
 // </ul>
+const head = document.createRange();
+console.log(head);

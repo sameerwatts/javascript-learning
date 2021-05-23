@@ -8,11 +8,31 @@
     <link rel="stylesheet" href="../../base.css" />
   </head>
   <body>
-    <div class="outerContainer">
-      <h2>This is a test heading</h2>
-      <span>I am hidden</span>
+    <div class="firstOuterContainer">
+      <h2>First heading</h2>
+      <span>First span</span>
+    </div>
+    <div class="items" id="about">
+      <p>New para</p>
+      <img
+        class="firstImg circle"
+        src="https://source.unsplash.com/random/200x200"
+        alt="random image"
+        data-name="this attribute is set by data attribute"
+      />
+      <p class="testPara">
+        I am hidden<strong>I am strong</strong> still a para <em>I am em</em>
+      </p>
+    </div>
+    <div class="secondWrapperDiv">
+      <div class="againSecondWrapperDiv">
+        <div class="secondOuterContainer">
+          <h2>Third heading</h2>
+          <span>Third span</span>
+        </div>
+      </div>
     </div>
 
-    <script src="./create-with-strings.js"></script>
+    <script src="./traversing.js"></script>
   </body>
 </html>

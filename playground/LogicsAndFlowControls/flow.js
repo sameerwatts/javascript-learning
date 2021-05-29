@@ -46,11 +46,11 @@ const age = 55;
 
 // 0, 1, -4, undefined, null, NaN, "", "Pankaj", "0", " ", [], {}
 
-if (Object.keys({}).length) {
-  console.log('you have enterd a name');
-} else {
-  console.log('you have not enterd a name');
-}
+// if (Object.keys({}).length) {
+//   console.log('you have enterd a name');
+// } else {
+//   console.log('you have not enterd a name');
+// }
 // Truthy is winner
 // 1
 // -4

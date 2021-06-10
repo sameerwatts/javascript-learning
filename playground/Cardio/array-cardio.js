@@ -50,6 +50,20 @@ function createRange(start, end) {
   return Array.from({ length: end - start + 1 }, (item, i) => i + start);
 }
 
+const values = Object.values(meats); // [10, 5, 7];
+const keys = Object.keys(meats);
+const entries = Object.entries(meats);
+entries.forEach((singleEntry) => {
+  const [singleEntryKey, singleEntryValue] = singleEntry;
+
+  console.log(singleEntryKey, singleEntryValue);
+});
+
+// keys.forEach((singleEntry) => singleEntry);
+// console.log(values);
+// console.log(keys);
+// console.log(entries);
+
 // Make a function that creates a range from x to y with Array.from();
 
 // Check if the last array you created is really an array with Array.isArray();

@@ -121,6 +121,31 @@ const inventory = [
   { type: 'pants', price: 123 },
 ];
 
+// const reduceInventory = inventory.reduce((accumulator, currentObj) => {
+//   if (accumulator[currentObj.type]) {
+//     accumulator[currentObj.type] += currentObj.price;
+//     return accumulator;
+//   }
+//   accumulator[currentObj.type] = currentObj.price;
+//   return accumulator;
+// }, {});
+// console.log(reduceInventory);
+
+const reduceInventoryItemCount = inventory.reduce((total, item) => {
+  if (total[item.type]) {
+    total[item.type] += 1;
+    return total;
+  }
+  total[item.type] = 1;
+  return total;
+}, {});
+
+console.log(reduceInventoryItemCount);
+
+const totalInventory = inventory.reduce(
+  (acc, currentVal) => acc + currentVal.price,
+  0
+);
 /*
       Looping Methods
     */
@@ -138,13 +163,13 @@ function createBody(body, face) {
 
 const updatedPeopleData = people.map((single) => {
   // get birthday
-  console.log(single.birthday);
+  // console.log(single.birthday);
   // how old they are
   const now = new Date();
   const birthday = new Date(single.birthday);
   const getAgeInMilisec = now.getTime() - birthday.getTime();
   const age = Math.floor(getAgeInMilisec / (1000 * 60 * 60 * 24 * 365));
-  console.log(age);
+  // console.log(age);
   // return fullname and age
   return {
     fullname: `${single.names.first} ${single.names.last}`,

@@ -36,9 +36,9 @@ function createGreeting(greeting = '') {
 
 const hello = createGreeting('hello');
 const hey = createGreeting('hey');
-console.log(hello('Sameer'));
-console.log(hey('Panakj'));
-console.log(hello('Noni'));
+// console.log(hello('Sameer'));
+// console.log(hey('Panakj'));
+// console.log(hello('Noni'));
 
 // function createGreetFn(greeting, name) {
 //   const myGreet = greeting.toUpperCase();
@@ -59,3 +59,36 @@ function createGame(gameName) {
 
 const hockeyScore = createGame('hokey');
 const footballScore = createGame('football');
+
+// const add = (function () {
+//   let counter = 0;
+//   return function () {
+//     console.log(counter);
+//     counter += 1;
+//     return counter;
+//   };
+// })();
+// function myFunction() {
+//   add();
+// }
+function Counter() {
+  let counter = 0;
+  function IncreaseCounter() {
+    counter += 1;
+    return counter;
+  }
+  return IncreaseCounter;
+}
+
+const increment1 = Counter();
+const increment2 = Counter();
+
+function myFunction1() {
+  console.log(increment1());
+}
+
+function myFunction2() {
+  console.log(increment2());
+}
+
+// click 3 times button1 then click 2 times button2

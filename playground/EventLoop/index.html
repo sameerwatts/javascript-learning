@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event loop and callback hell</title>
+    <link rel="stylesheet" href="../../base.css" />
+    <style>
+      .box {
+          width: 100px;
+          height: 100px;
+          background-color: #fff;
+          color: #000;
+          margin: 100px auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* transition: all 1000ms ease-in-out; */
+      }
+      .round {
+        border-radius: 50%;
+      }
+      .red {
+          background-color: red;
+          color: #fff;
+      }
+      .purple {
+          background-color: purple;
+      }
+      .fadeOut {
+          opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">click</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
